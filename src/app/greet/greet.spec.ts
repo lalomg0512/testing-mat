@@ -1,11 +1,9 @@
-import { greet } from './greet';
+import{greet} from './greet';
 
-describe('greet',()=> {
+describe('greet',() => {
+    it('should include the name in the massage',()=>{
+        expect(greet('mosh')).toContain('mosh');
+    })
+})
 
-	it('should include the name in the message',(){
-		expect(greet('mosh')).toContain('mosh');
-
-	})
-
-
-});
+export { greet };
